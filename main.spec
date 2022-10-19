@@ -1,7 +1,7 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 a = Analysis(['main.py'],
-             datas=[('C:\\Python37\\lib\\site-packages\\google_api_python_client-1.12.8.dist-info\\*', 'google_api_python_client-1.12.8.dist-info')]
+             datas=[('C:\Users\space\AppData\Local\Programs\Python\Python310\Lib\site-packages\google_api_python_client-2.65.0.dist-info\\*', 'google_api_python_client-2.65.0.dist-info')]
 )
 pyz = PYZ(a.pure)
 exe = EXE(pyz,
