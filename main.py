@@ -228,7 +228,7 @@ def create_output(new_hs: dict, new_avgs: dict, scens: dict, sheet_id: str) -> N
 
 
 def init_version_blacklist() -> dict:
-    url = 'https://docs.google.com/spreadsheets/d/1uvXfx-wDsyPg5gM79NDTszFk-t6SL42seL-8dwDTJxw/gviz/tq?tqx=out:csv&sheet=Update_Dates'
+    url = 'https://docs.google.com/spreadsheets/d/1huBKRQIRmJoXIt7Quw2U_qEQ17LmCjDzqsTLP5oUwqM/gviz/tq?tqx=out:csv&sheet=Update_Dates'
     response = urllib.request.urlopen(url)
     lines = [l.decode('utf-8') for l in response.readlines()]
     blacklist = dict()
@@ -242,7 +242,7 @@ def init_version_blacklist() -> dict:
 
 
 def init_cs_level_ids_and_blacklist() -> (dict, dict):
-    url = 'https://docs.google.com/spreadsheets/d/1uvXfx-wDsyPg5gM79NDTszFk-t6SL42seL-8dwDTJxw/gviz/tq?tqx=out:csv&sheet=cslevelids'
+    url = 'https://docs.google.com/spreadsheets/d/1huBKRQIRmJoXIt7Quw2U_qEQ17LmCjDzqsTLP5oUwqM/gviz/tq?tqx=out:csv&sheet=cslevelids'
     response = urllib.request.urlopen(url)
     lines = [l.decode('utf-8') for l in response.readlines()]
     cs_level_ids = dict()
